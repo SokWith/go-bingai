@@ -13,6 +13,15 @@ func Index(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(wr, r, common.PROXY_WEB_PAGE_PATH, http.StatusFound)
 		return
 	}
+	
+	// 设置 USRLOC cookie 的值为 JA=1
+	c := &http.Cookie{
+		Name:  "USRLOC",
+		Value: "JA=1",
+		Path:  "/",
+	}
+	http.SetCookie(w, c)
+	
 	if strings.HasPrefix(r.URL.Path, "/turing") {
 		if !helper.CheckAuth(r) {
 			helper.UnauthorizedResult(wr)
