@@ -15,6 +15,13 @@ func Sydney(w http.ResponseWriter, r *http.Request) {
 //		}
 //		http.SetCookie(w, c)
 //	}
+	// 设置 USRLOC cookie 的值为 JA=1
+	c := &http.Cookie{
+		Name:  "USRLOC",
+		Value: "JA=1",
+		Path:  "/",
+	}
+	http.SetCookie(w, c)
 
 	// 检查用户是否已认证
 	if !helper.CheckAuth(r) {
