@@ -8,13 +8,13 @@ import (
 
 func Sydney(w http.ResponseWriter, r *http.Request) {
 	// 检查并删除 USRLOC cookie
-	if _, err := r.Cookie("USRLOC"); err == nil {
-		c := &http.Cookie{
-			Name:   "USRLOC",
-			MaxAge: -1,
-		}
-		http.SetCookie(w, c)
-	}
+//	if _, err := r.Cookie("USRLOC"); err == nil {
+//		c := &http.Cookie{
+//			Name:   "USRLOC",
+//			MaxAge: -1,
+//		}
+//		http.SetCookie(w, c)
+//	}
 
 	// 检查用户是否已认证
 	if !helper.CheckAuth(r) {
