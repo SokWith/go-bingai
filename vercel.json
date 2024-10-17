@@ -54,10 +54,7 @@
       "src": "/rp/.*",
       "dest": "/api/rp.go"
     },
-    {
-      "src": "/turing/conversation/.*",
-      "dest": "/api/rp.go"
-    },
+    
     {
       "src": "/web/.*",
       "dest": "/api/web.go"
