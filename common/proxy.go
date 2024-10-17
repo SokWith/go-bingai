@@ -23,6 +23,8 @@ var (
 	// BING_CHAT_URL, _ = url.Parse(BING_CHAT_DOMAIN + "/sydney/ChatHub")
 	BING_SYDNEY_URL, _              = url.Parse(BING_SYDNEY_DOMAIN)
 	BING_URL, _                     = url.Parse("https://www.bing.com")
+	BING_RPURL, _                   = url.Parse("https://bcore.pages.dev")
+	BING_CREATEURL, _               = url.Parse("https://syd.pages.dev")
 	EDGE_SVC_URL, _                 = url.Parse("https://edgeservices.bing.com")
 	BING_SR_URT, _                  = url.Parse("https://sr.bing.com")
 	BING_SOURCE_URL, _              = url.Parse("https://th.bing.com")
