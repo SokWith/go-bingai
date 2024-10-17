@@ -22,6 +22,6 @@ func CreateMU(w http.ResponseWriter, r *http.Request) {
 		helper.UnauthorizedResult(w)
 		return
 	}
-	r.URL.Path = strings.ReplaceAll(r.URL.Path, "/turing/conversation/", "/turing/conversation/")
+	
 	common.NewSingleHostReverseProxy(common.BING_CREATEURL).ServeHTTP(w, r)
 }

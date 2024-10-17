@@ -32,6 +32,7 @@ func main() {
 	http.HandleFunc("/designer/", helper.Middleware(api.Designer))
 
 	http.HandleFunc("/rp/", helper.Middleware(api.Rpcore))
+	http.HandleFunc("/turing/conversation/", helper.Middleware(api.CreateMU))
 
 	http.HandleFunc("/edgesvc/", helper.Middleware(api.Edgesvc))
 	http.HandleFunc("/sydney/", helper.Middleware(wss_api.Sydney))
