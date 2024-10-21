@@ -291,7 +291,7 @@ _w['_sydConvConfig'] = {
   compSydClientPlatform: 'Web',
   compSydRequestSource: 'cib',
   compSydRequestScenario: 'chat',
-  sydBaseUrl: location.origin,
+  sydBaseUrl: 'https://syd.pages.dev',
   enterpriseChatDefaultIconLargeChecksum: 'R5FZeTI5Afc9NBRK7GHAzPkr1vHbc/X2n1c+mPVUhzE=',
   enablePluginsForBizChat: true,
   enableCachedTokenForMsgExt: true,
