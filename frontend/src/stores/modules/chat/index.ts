@@ -28,7 +28,7 @@ export const useChatStore = defineStore(
         label: 'Bing 官方',
       },
       {
-        baseUrl: 'https://syd.pages.dev',
+        baseUrl: 'https://mcop.pages.dev',
         label: 'Cloudflare Worker',
       },
       {
