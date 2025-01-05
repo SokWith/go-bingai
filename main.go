@@ -36,6 +36,7 @@ func main() {
 
 	http.HandleFunc("/edgesvc/", helper.Middleware(api.Edgesvc))
 	http.HandleFunc("/sydney/", helper.Middleware(wss_api.Sydney))
+	http.HandleFunc("/c/api/chat", helper.Middleware(wss_api.Sydney))
 	http.HandleFunc("/opaluqu/", helper.Middleware(wss_api.Opaluqu))
 
 
